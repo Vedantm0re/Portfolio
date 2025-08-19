@@ -2,39 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vedant's IT Quiz App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Personal Portfolio - Vedant More</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
+      color: #f4f4f4;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-attachment: fixed;
+    }
+
+    nav ul {
       display: flex;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 15px;
+      list-style: none;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: #eee;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
-    .quiz-box {
-      width: 90%;
-      max-width: 650px;
-      background: #181818;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    nav ul li {
+      margin: 0 auto;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 60px 20px;
       text-align: center;
-      animation: fadeUp 0.7s ease-in-out;
+      background: rgba(0, 0, 0, 0.3);
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 18px rgba(0,0,0,0.5);
     }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
+    #home h1 {
+      display: inline;
+      font-size: 2.8em;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    #name {
+      display: inline;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00ffd5, #00c3ff, #6e7eff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      animation: fadeIn 2s ease-in forwards;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin:auto 0;
+      font-size: 1.1em;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #00ffcc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    h1, h2 { 
+    @media screen and (max-width: 600px) {
+      nav ul {
+        flex-direction:column;
+       }
+       nav ul li {
+       	width:98%;
+       	text-align: center;
+       	padding : 5px ;
+       	border-bottom :1px solid rgb(0,0,0,0.3);
+       &:last-child {
+       	border:none; /* last one mein doesn't need bottom  border */
+       }
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+  <h1>💻</h1>
+  <br>
+    <h1>Hello, I'm </h1><h1 id="name">Vedant More</h1>
+    <p>Tech Explorer | Aspiring Developer | Creative Learner</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a degree in Information Technology. I'm passionate about building creative, efficient, and interactive digital solutions. My focus areas include web development, UI/UX design, and exploring modern frameworks.</p>
+    <p>Apart from coding, I enjoy experimenting with design concepts, solving real-world problems, and learning cutting-edge technologies that make an impact.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li><strong>Personal Portfolio</strong> A modern responsive site to showcase my skills and projects.</li>
+      <li><strong>Quiz Application</strong>A timed multiple-choice quiz with scoring system and feedback.</li>
+      <li><strong>Fluid Simulation</strong>A JavaScript-based interactive water/fluid simulation experiment.</li>
+      <li><strong>Black Hole Visual</strong> A 3D-inspired black hole effect using HTML, CSS, and JS.</li>
+      <li><strong>More Coming Soon...</strong> Working on simulations, React projects, and creative UI experiments.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:vedantbmore@gmail.com" style="color: #00ffcc;">vedantbmore@gmail.com</a></p>
+    <p>Let's connect for collaboration, projects, or just to exchange ideas!</p>
+  </section>
+</body>
+</html>    h1, h2 { 
       color: #00e5ff;
       margin-bottom: 15px; 
       text-shadow: 0 0 8px rgba(0,229,255,0.7);
