@@ -15,7 +15,7 @@ This site showcases my projects, skills, and interests in a **modern dark-mode d
 
 ## 🌐 Live Preview
 Check out the live site here:  
-👉 [Portfolio on GitHub Pages](https://yourusername.github.io/portfolio/)
+👉 [Portfolio on GitHub Pages](https://vedantm0re.github.io/Portfolio/)
 
 ---
 
