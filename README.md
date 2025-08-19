@@ -29,7 +29,7 @@ Check out the live site here:
 ## ⚡ How to Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/Vedantm0re/Portfolio.git
 
 2. Open index.html in your browser.
 
